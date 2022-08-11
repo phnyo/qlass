@@ -20,8 +20,8 @@ export const handler: Handlers<Course[] | null> = {
 
 export default function Home({ data }: PageProps<Course[] | null>) { 
   return (
-    <div class={tw("px-6 ph-10")}> 
-      <h1 class={tw("ph-4 text-lg")}> 嘘シラバス </h1>
+    <div class={tw("h-screen bg-green-200")}> 
+      <h1 class={tw("px-10 py-6 text-lg")}> 嘘シラバス </h1>
       <section>
       <CourseTable data={data}/>
       </section>
