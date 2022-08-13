@@ -3,7 +3,7 @@
 import { h } from "preact"; 
 import { tw } from "@twind";
 import CourseTable from "../islands/Table.tsx";
-import { Course, findAllCourses, sortCourses } from "@sort";
+import { Course, findAllCourses, sortCourses } from "@readcsv";
 import { Handlers } from "$fresh/server.ts";
 
 export const handler: Handlers<Course[] | null> = {
